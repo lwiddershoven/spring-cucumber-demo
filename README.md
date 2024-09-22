@@ -18,4 +18,8 @@ and form living, verified, documentation on the behaviour of your system.
 
 ## Running
 
-Just run mvn clean verify on the command line.
+### The tests
+Just run mvn clean verify on the command line. The tests use Testcontainers (e.g. docker) to start their database.
+
+### The app
+The app is not that interesting, but you can run it after starting `docker-compose up -d` to ensure postgres is available.

@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: spring-cucumber-demo
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: example # see docker-compose.yml
