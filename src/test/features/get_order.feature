@@ -3,6 +3,9 @@ Feature: Retrieve an individual order
 # Working with feature files in IntelliJ works best with the cucumber plugin installed
 
   Scenario: Requesting a non-existing order returns HTTP code 404 and no body
+    When the client calls /orders/does-not-exist
+    Then the status code is 404
+    And the body is empty
 
   Scenario: Requesting a existing order returns HTTP code 200 with the order data in the body in JSON format
 
